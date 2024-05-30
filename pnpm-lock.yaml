@@ -17,6 +17,9 @@ importers:
       '@unhead/vue':
         specifier: ^1.9.7
         version: 1.9.7(vue@3.4.25(typescript@5.4.5))
+      cross-env:
+        specifier: ^7.0.3
+        version: 7.0.3
       fs-extra:
         specifier: ^11.2.0
         version: 11.2.0
@@ -160,7 +163,7 @@ importers:
         version: 5.4.5
       unplugin-vue-markdown:
         specifier: ^0.26.2
-        version: 0.26.2(rollup@4.16.4)(vite@5.2.10(@types/node@20.6.0)(terser@5.19.4))
+        version: 0.26.2(rollup@2.79.1)(vite@5.2.10(@types/node@20.6.0)(terser@5.19.4))
       vite:
         specifier: ^5.2.10
         version: 5.2.10(@types/node@20.6.0)(terser@5.19.4)
@@ -5600,6 +5603,14 @@ snapshots:
       picomatch: 2.3.1
       rollup: 2.79.1
 
+  '@rollup/pluginutils@5.1.0(rollup@2.79.1)':
+    dependencies:
+      '@types/estree': 1.0.5
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
+    optionalDependencies:
+      rollup: 2.79.1
+
   '@rollup/pluginutils@5.1.0(rollup@3.29.2)':
     dependencies:
       '@types/estree': 1.0.5
@@ -8588,6 +8599,19 @@ snapshots:
     transitivePeerDependencies:
       - rollup
       - supports-color
+
+  unplugin-vue-markdown@0.26.2(rollup@2.79.1)(vite@5.2.10(@types/node@20.6.0)(terser@5.19.4)):
+    dependencies:
+      '@mdit-vue/plugin-component': 2.1.2
+      '@mdit-vue/plugin-frontmatter': 2.1.2
+      '@mdit-vue/types': 2.1.0
+      '@rollup/pluginutils': 5.1.0(rollup@2.79.1)
+      '@types/markdown-it': 14.0.1
+      markdown-it: 14.1.0
+      unplugin: 1.10.1
+      vite: 5.2.10(@types/node@20.6.0)(terser@5.19.4)
+    transitivePeerDependencies:
+      - rollup
 
   unplugin-vue-markdown@0.26.2(rollup@4.16.4)(vite@5.2.10(@types/node@20.6.0)(terser@5.19.4)):
     dependencies:

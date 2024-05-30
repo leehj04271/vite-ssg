@@ -99,6 +99,7 @@
   "dependencies": {
     "@unhead/dom": "^1.9.7",
     "@unhead/vue": "^1.9.7",
+    "cross-env": "^7.0.3",
     "fs-extra": "^11.2.0",
     "html-minifier": "^4.0.0",
     "html5parser": "^2.0.2",

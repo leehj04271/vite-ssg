@@ -1,5 +1,6 @@
 <script lang="ts">
 import { useHead } from '@unhead/vue'
+import Counter from "../components/Counter.vue";
 
 export default {
   setup() {
@@ -28,4 +29,5 @@ export default {
 <template>
   <p>Hello I am B</p>
   <img src="../assets/test.jpg" alt="">
+  <Counter />
 </template>
